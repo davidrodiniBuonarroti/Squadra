@@ -12,6 +12,30 @@ public class Calciatore extends Persona{
         this.nGoal = nGoal;
     }
 
+    public String getRuolo(){
+        return this.ruolo;
+    }
+
+    public int getNMaglia(){
+        return this.nMaglia;
+    }
+
+    public int getNGoal(){
+        return this.nGoal;
+    }
+
+    public void setRuolo(String ruolo){
+        this.ruolo = ruolo;
+    }
+
+    public void setNMaglia(int nMaglia){
+        this.nMaglia = nMaglia;
+    }
+
+    public void addGoal(){
+        this.nGoal++;
+    }
+
     public String toString(){
         String rit = "\n{";
         rit += this.toStringInner();
