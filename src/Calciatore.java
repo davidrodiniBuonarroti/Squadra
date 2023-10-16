@@ -36,6 +36,18 @@ public class Calciatore extends Persona{
         this.nGoal++;
     }
 
+    public Object clone(){
+        //Cloniamo attributi Persona usando il metodo clone della sottoclasse
+        //Attenzione: il tipo Calciatore è anche tipo persona(is a)
+        Calciatore calciatore = (Calciatore) super.clone();
+
+        //Clono gli attributi di calciatore
+        calciatore.ruolo = this.ruolo;
+        calciatore.nMaglia = this.nMaglia;
+        calciatore.nGoal = this.nGoal;
+        return calciatore;
+    }
+
     public String toString(){
         String rit = "\n{";
         rit += this.toStringInner();
