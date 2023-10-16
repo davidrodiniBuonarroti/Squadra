@@ -10,10 +10,26 @@ public class Persona {
         this.sesso = sesso;
     }
 
+    public String getNome(){
+        return this.nome;
+    }
+
+    public int getAnnoNascita(){
+        return this.annoNascita;
+    }
+
+    public String getSesso(){
+        return this.sesso;
+    }
+
+    public Object clone(){
+        return new Persona(this.nome, this.annoNascita, this.sesso);
+    }
+
     public String toString(){
         String rit = "{Nome: " + this.nome + ",\n";
-        rit += "Anno di nascità: " + this.annoNascita + ",\n";
-        rit += "Sesso: " + this.sesso + "}\n";
+        rit += " Anno di nascità: " + this.annoNascita + ",\n";
+        rit += " Sesso: " + this.sesso + "}\n";
         return rit;
     }
 }
