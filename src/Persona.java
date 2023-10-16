@@ -22,6 +22,10 @@ public class Persona {
         return this.sesso;
     }
 
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
     public Object clone(){
         return new Persona(this.nome, this.annoNascita, this.sesso);
     }
