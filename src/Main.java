@@ -6,5 +6,8 @@ public class Main {
         Persona persona2 = (Persona) persona1.clone();
         persona2.setNome("Paolo");
         System.out.println(persona2.clone());
+
+        Calciatore calciatore = new Calciatore("Cristiano", 1985, "M", "Punta", 7, 1000);
+
     }
 }
