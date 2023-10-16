@@ -8,6 +8,6 @@ public class Main {
         System.out.println(persona2.clone());
 
         Calciatore calciatore = new Calciatore("Cristiano", 1985, "M", "Punta", 7, 1000);
-
+        System.out.println(calciatore.toString());
     }
 }
