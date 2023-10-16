@@ -7,7 +7,11 @@ public class Main {
         persona2.setNome("Paolo");
         System.out.println(persona2.clone());
 
-        Calciatore calciatore = new Calciatore("Cristiano", 1985, "M", "Punta", 7, 1000);
-        System.out.println(calciatore.toString());
+        Calciatore calciatore1 = new Calciatore("Cristiano", 1985, "M", "Punta", 7, 1000);
+        System.out.println(calciatore1.toString());
+
+        Calciatore calciatore2 = (Calciatore) calciatore1.clone();
+        calciatore2.addGoal();
+        System.out.println(calciatore2.toString());
     }
 }
