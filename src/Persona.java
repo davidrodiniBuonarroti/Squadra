@@ -31,7 +31,7 @@ public class Persona {
     }
 
     public String toString(){
-        String rit = "{";
+        String rit = "{\n";
         rit += this.toStringInner();
         rit += "}\n";
         return rit;
